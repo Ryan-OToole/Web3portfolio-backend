@@ -9,4 +9,8 @@ export class AppController {
   getMetamaskKey(): string {
     return this.appService.getMetamaskKey();
   }
+  @Get('/hello')
+  getHelloWorld(): string {
+    return this.appService.getHelloWorld();
+  }
 }

@@ -6,4 +6,7 @@ export class AppService {
     console.log('env', process.env.METAMASK_PRIVATEKEY);
     return process.env.METAMASK_PRIVATEKEY;
   }
+  getHelloWorld(): string {
+    return 'Hello World';
+  }
 }
