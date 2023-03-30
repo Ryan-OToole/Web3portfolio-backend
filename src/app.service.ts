@@ -4,6 +4,6 @@ import { Injectable } from '@nestjs/common';
 export class AppService {
   getMetamaskKey(): string {
     console.log('env', process.env.METAMASK_PRIVATEKEY);
-    return "Hello Girl";
+    return process.env.METAMASK_PRIVATEKEY;
   }
 }
